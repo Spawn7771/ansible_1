@@ -1,0 +1,4 @@
+- name: Install tree
+  apt: # package manager for deb family
+    name: "vim"
+    state: present

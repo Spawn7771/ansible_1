@@ -1,6 +1,0 @@
-all: # all hosts
-  children: # this child / group
-    geek: # grop name
-      hosts: # host in group
-        node1:
-        node2:
