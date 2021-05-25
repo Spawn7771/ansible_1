@@ -32,6 +32,7 @@ php_webserver_daemon: "nginx"
 php_enable_php_fpm: true
 php_packages:
   - php
+  - php-fpm
   - php-cli
   - php-common
   - php-gd
