@@ -2,6 +2,7 @@
 - hosts: db
   vars_files:
     - vars/wordpress.yml
+    - vars/wordpress_vault.yml
   roles:
     - { role: geerlingguy.nginx }
     - { role: geerlingguy.php }

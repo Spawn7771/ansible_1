@@ -2,8 +2,9 @@
 - hosts: node3
   vars_files:
     - ./wordpress/vars/wordpress.yml
+    - ./wordpress/vars/wordpress_vault.yml
   roles:
-    - { role: geerlingguy.nginx }
-    - { role: geerlingguy.php }
-    - { role: geerlingguy.mysql }
-    - { role: wordpress }
+    - { role: geerlingguy.nginx, tags: [nginx]}
+    - { role: geerlingguy.php, tags: [php]}
+    - { role: geerlingguy.mysql,  tags: [mysql]}
+    - { role: wordpress,  tags: [wordpress, app]}

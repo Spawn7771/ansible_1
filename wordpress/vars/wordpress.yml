@@ -49,11 +49,6 @@ php_packages:
   - php-zip
   - php-mysql
 
-mysql_db: "wordpress" 
-mysql_user: "wordpress"
-mysql_password: "WordpreSS0!"
-
-
 mysql_databases:
   - name: "{{ mysql_db }}"
     encoding: utf8
